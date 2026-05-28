@@ -1,1 +1,15 @@
 ## TODO
+
+- Conversione e visualizzazione di un file .md in un file .html
+- Revisione del template layout.js per uniformare le visualizzazioni di pagine html (template)
+- Realizzazione della pagina **dashboard.js** che mostra le informazioni basilari del sistema (caratteristiche e versioni dei prodotti coinvolti). In questa stessa pagina devono essere presenti pulsanti che consentono di accedere a informazioni tecniche più avanzate ma anche più riservate (log, lista operazioni, ...
+- **structure** albero della struttura delle directory del progetto
+- **mailer.js** realizzazione di una mail di servizio**: adibita a informare il responsabile del sito di eventuali errori sopravvenuti o eventuali tentativi che tendono a 'bucare'il sito stesso
+- **LastAccess.js** monstra un elenco degli ultimi accessi
+- **test-mail.js** stumento per effettuare
+- Autenticazione degli utenti
+- Autorizzazioni degli utenti
+- Backup del database
+- Restore del database
+- **Regola generale**: Perchè tutte le chiamate a funzioni devono passare i parametri in modalità **JSON** ? perchè in questo modo si ha solo un parametro (oggetto JSON) quando ci sono variazioni nel numero di parametri non costringono lo sviluppatore ad effettaure una ricerca in tutto il progetto per adeguare il numero di parametri passati e non si hanno errori per il numero di parameteri passati
+- inserimenti di **Middleware**: indicare il perchè un certo middleware è inserito e relativi vantaggi
