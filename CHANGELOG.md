@@ -1,3 +1,6 @@
+## [30-05-2026 00:38][v1.0.05] - Revisione a seguito di mailer
+* Server.js e backend/routes/mainRoutes.js so stati ristrutturati con revisione e spostamento della gestione errori di sistema allínterno di backend/routes/mainRoutes.js
+
 ## [29-05-2026 23:33][v1.0.04] - Nuove caratteristiche
 - **feature/mailer**: realizzazione di una mail di servizio adibita a informare il responsabile del sito di eventuali errori sopravvenuti o eventuali tentativi che tendono a 'bucare' il sito stesso:
   - **npm install nodemailer**
