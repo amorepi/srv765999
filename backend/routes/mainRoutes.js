@@ -28,4 +28,21 @@ router.get('/view-tags', async (req, res, next) => {
   }
 });
 
+// Nuova Route: Converte e mostra l'elenco dei TODO e regole generali del progetto
+router.get('/view-todo', async (req, res, next) => {
+  try {
+    // Legge ed elabora lo stesso file NEWTAGS.md (che ora contiene la lista TODO aggiornata)
+    const htmlContenuto = await mdToHtml({ filePath: './NEWTAGS.md' });
+    
+    const paginaCompleta = getLayoutHTML({
+        title: "Lista TODO & Linee Guida",
+        content: htmlContenuto
+    });
+    
+    res.send(paginaCompleta);
+  } catch (err) {
+    next(err); // Rimanda al middleware 500 in caso di problemi di lettura file
+  }
+});
+
 module.exports = router;
