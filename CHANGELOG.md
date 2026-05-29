@@ -1,3 +1,11 @@
+## [29-05-2026 17:31][v1.0.02] - Nuove caratteristiche
+- **feature/mdToHtml** - Conversione e visualizzazione di un file .md in un file .html
+  - **npm install marked**
+  - Crea la funzione il file **backend/mdToHtml.js**
+  - Revisione del file **backend/routes/mainRoutes.js**
+  - Crea Route: creazione del percorso **/view-tags**
+  - Crea test-verifica: **http://localhost:3000/view-tags**
+
 ## [29-05-2026 01:29][v1.0.01] - Nuove caratteristiche
 
 * **feature/mainRoutes****

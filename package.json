@@ -1,7 +1,7 @@
 {
   "name": "srv765999",
   "description": "Progetto Nginx-NodeJS-PM2-MongoDB",
-  "version": "1.0.01",
+  "version": "1.0.02",
   "private": true,
   "author": "Pietro ing. Amore",
   "license": "ISC",
@@ -12,6 +12,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "marked": "^18.0.4"
   }
 }
