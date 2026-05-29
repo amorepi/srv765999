@@ -38,11 +38,15 @@ router.get('/view-todo', async (req, res, next) => {
         title: "Lista TODO & Linee Guida",
         content: htmlContenuto
     });
-    
     res.send(paginaCompleta);
   } catch (err) {
     next(err); // Rimanda al middleware 500 in caso di problemi di lettura file
   }
+});
+
+// Rotta test Errore (Genera un crash controllato per provare il mailer)
+router.get('/error-test', (req, res) => {
+  throw new Error("Test di malfunzionamento controllato per la feature/mailer");
 });
 
 module.exports = router;

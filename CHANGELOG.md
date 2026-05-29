@@ -1,3 +1,10 @@
+## [29-05-2026 23:33][v1.0.04] - Nuove caratteristiche
+- **feature/mailer**: realizzazione di una mail di servizio adibita a informare il responsabile del sito di eventuali errori sopravvenuti o eventuali tentativi che tendono a 'bucare' il sito stesso:
+  - **npm install nodemailer**
+  - crea il file **backend/mailer.js**
+  - Modifica **`backend/routes/mainRoutes.js`** introducendo la rotta /error-test
+  - Esegui test-verifica: [https://ingamore.org/error-test](https://ingamore.org/error-test)
+
 ## [29-05-2026 18:17][v1.0.03] - Visualizza TODO
 - **feature/view-todo**
   - Creazione della route **/view-todo** in **backend/routes/mainRoutes.js** per visualizzare la sezione TODO in NEWTAGS.md

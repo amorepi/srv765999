@@ -2,11 +2,7 @@
 
 - Revisione del template layout.js per uniformare le visualizzazioni di pagine html (template)
 - Realizzazione della pagina **dashboard.js** che mostra le informazioni basilari del sistema (caratteristiche e versioni dei prodotti coinvolti). In questa stessa pagina devono essere presenti pulsanti che consentono di accedere a informazioni tecniche più avanzate ma anche più riservate (log, lista operazioni, ...
-- **structure** albero della struttura delle directory del progetto
-- **mailer.js** realizzazione di una mail di servizio**: adibita a informare il responsabile del sito di eventuali errori sopravvenuti o eventuali tentativi che tendono a 'bucare'il sito stesso
-- **LastAccess.js** monstra un elenco degli ultimi accessi
-- **test-mail.js** stumento per effettuare
-- Autenticazione degli utenti
+- **structure** albero della struttura delle directory del progetto- **LastAccess.js** monstra un elenco degli ultimi accessi- Autenticazione degli utenti
 - Autorizzazioni degli utenti
 - Backup del database
 - Restore del database
