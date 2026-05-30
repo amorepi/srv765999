@@ -1,3 +1,12 @@
+## [31-05-2026 01:01][v1.01.00] - Revisione Homepage e Creazione Users Collections
+* **feature/homepage**
+  * **Interfaccia Dinamica Condizionale**: Sostituzione della pagina statica index.html con il modulo `backend/homepage.js` per gestire lo stato dell'interfaccia in base alla presenza o meno dell'utente loggato.
+  * **Evoluzione del Layout Universale**: Aggiornato `backend/layout.js` per accogliere le voci di navigazione separate, il calcolo automatico delle due iniziali dell'avatar nel cerchietto e il link di disconnessione globale.
+  * **Bootstrap del Database**: Implementazione del modulo `backend/users.js` per la connessione asincrona a MongoDB tramite l'URI dinamico legato alla variabile `$PROJECT`.
+  * **Popolamento Iniziale (Data Seed)**: Inserimento controllato nel database dei primi utenti di test con ruoli e permessi JSON differenziati al primo avvio del sistema.
+  * **Ottimizzazione Percorsi Statici**: Configurazione blindata di `express.static` tramite `process.cwd()` in `server.js` per garantire l'accessibilità dei CSS su tutte le rotte Express della VPS.
+  * **Predisposizione Storage**: Definizione della cartella protetta ed esclusa dal deploy `**public/uploads/users/`** destinata alla futura gestione autonoma delle immagini del profilo utente.
+
 ## [30-05-2026 20:13][v1.0.07] - Organizzazione del layout
 * Fix: preorganizzazione del sito per un layout generalizzato con correzioni varie
 

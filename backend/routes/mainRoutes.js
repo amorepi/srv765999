@@ -2,12 +2,34 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const { layout } = require('../layout');
+const { homepage } = require('../homepage');
 const { mailer } = require('../mailer');
 const { mdToHtml } = require('../mdToHtml');
 
-// Route Principale: Serve l'interfaccia frontend statica
+// --- SIMULAZIONE STATO UTENTE (Temporaneo per feature/homepage) ---
+let utenteSimulato = null; 
+
+// Route Principale dinamica riallineata al modulo homepage
 router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public', 'index.html'));
+  // Esegue il rendering passando il parametro in modalità JSON
+  const paginaCompleta = homepage({ user: utenteSimulato });
+  res.send(paginaCompleta);
+});
+
+// Rotte temporanee per simulare i criteri grafici richiesti
+router.get('/test-login-admin', (req, res) => {
+  utenteSimulato = { name: "Piero", lastName: "Amore", fullName: "Piero Amore", role: "admin", avatarUrl: "" };
+  res.redirect('/');
+});
+
+router.get('/test-login-user', (req, res) => {
+  utenteSimulato = { name: "Mario", lastName: "Rossi", fullName: "Mario Rossi", role: "user", avatarUrl: "https://unsplash.com" };
+  res.redirect('/');
+});
+
+router.get('/test-logout', (req, res) => {
+  utenteSimulato = null;
+  res.redirect('/');
 });
 
 // Route per visualizzare le note di rilascio

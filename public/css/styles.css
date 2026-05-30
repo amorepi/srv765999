@@ -50,12 +50,12 @@ body {
 
 /* Link di Navigazione (Home Dashboard a sinistra) */
 .main-nav a {
-    text-decoration: none;
-    color: #495057;
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-right: 20px;
-    transition: color 0.15s ease;
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-right: 30px; /* Aumentato per non far sembrare i link un'unica opzione */
+  transition: color 0.15s ease;
 }
 
 .main-nav a:hover { 
@@ -115,6 +115,23 @@ body {
     background-color: #ffffff;
     color: #212529;
     border-color: #86b7fe;
+}
+
+.btn-logout {
+  text-decoration: none;
+  color: #dc3545; /* Rosso per l'azione di uscita */
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  margin-left: 10px;
+}
+
+.btn-logout:hover {
+  background-color: #dc3545;
+  color: #ffffff;
 }
 
 /* ======================================================================
