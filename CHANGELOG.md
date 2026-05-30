@@ -1,3 +1,6 @@
+## [30-05-2026 20:13][v1.0.07] - Organizzazione del layout
+* Fix: preorganizzazione del sito per un layout generalizzato con correzioni varie
+
 ## [30-05-2026 13:10][v1.0.06] - Revisione del template layout
 **feature/layout**: Revisione del template layout.js che prevede
 

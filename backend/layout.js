@@ -1,7 +1,7 @@
 function layout(params) {
   const title = params.title || "Applicazione";
   const content = params.content || "<p>Nessun contenuto disponibile.</p>";
-  const cssFile = params.cssFile || "style.css";
+  const cssFile = params.cssFile || "styles.css";
   
   const vpsName = process.env.MY_VPS || "Server di Produzione";
   const appVersion = process.env.npm_package_version || "1.0.05";
@@ -31,7 +31,7 @@ function layout(params) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
-    <link rel="stylesheet" href="/css/${cssFile}">
+    <link rel="stylesheet" href="/css/${cssFile}?v=${appVersion}">
 </head>
 <body>
 
