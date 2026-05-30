@@ -1,7 +1,17 @@
+## [30-05-2026 13:10][v1.0.06] - Revisione del template layout
+**feature/layout**: Revisione del template layout.js che prevede
+
+* una barra "nav" a tre colonne per accogliere il Logo e l'avatar user con fixed top
+* corpo centrale libero e flessibile
+* creazione di un "footer"in fondo alla pagina a tre colonne per esporre informazioni varie (versione, ...)
+* Adeguamento delle pagine di errore con eliminazione di error.css
+
 ## [30-05-2026 00:38][v1.0.05] - Revisione a seguito di mailer
-* Server.js e backend/routes/mainRoutes.js so stati ristrutturati con revisione e spostamento della gestione errori di sistema allínterno di backend/routes/mainRoutes.js
+
+* **Server.js** e **backend/routes/mainRoutes.js** sono stati ristrutturati con revisione e spostamento della gestione errori di sistema all'interno di **backend/routes/mainRoutes.js**
 
 ## [29-05-2026 23:33][v1.0.04] - Nuove caratteristiche
+
 - **feature/mailer**: realizzazione di una mail di servizio adibita a informare il responsabile del sito di eventuali errori sopravvenuti o eventuali tentativi che tendono a 'bucare' il sito stesso:
   - **npm install nodemailer**
   - crea il file **backend/mailer.js**
@@ -9,6 +19,7 @@
   - Esegui test-verifica: [https://ingamore.org/error-test](https://ingamore.org/error-test)
 
 ## [29-05-2026 18:17][v1.0.03] - Visualizza TODO
+
 - **feature/view-todo**
   - Creazione della route **/view-todo** in **backend/routes/mainRoutes.js** per visualizzare la sezione TODO in NEWTAGS.md
   - Esegui test-verifica: [https://ingamore.org/view-todo](https://ingamore.org/view-todo)
