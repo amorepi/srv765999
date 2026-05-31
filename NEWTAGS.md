@@ -1,8 +1,23 @@
+## Revisione Homepage
+
+**feature/homepage**: per evitare le complicazioni della visualizzazione di una homepage con header e footer fissi su altri dispositivi (iPad, iPhone, ecc...), è preferibile rimuovere totalmente il footer ed operare con la header fissa e il resto della pagina fluttuante. A tale scopo vengono apportate le  seguenti modifiche:
+
+* Creazione della cartella **Public/img** che accoglie le immagini di sistema del progetto
+* Disponibilità come variabili di ambiente (.env)
+  * LOGO_PROJ=MiniserviziLogo50.png
+  * AVATAR_PROJ=User.png
+* Header ora è così strutturato:
+  * LOGO_PROJ   Home  -  Versione  -  btn-Accedi oppure
+  * LOGO_PROJ   Home  Dashboard  -  Versione  -  AVATAR_PROJ  Esci oppure
+  * LOGO_PROJ   Home  Dashboard  -  Versione  -  Foto_User  Esci
+  * negli ultimi due casi il passaggio del mouse su avatar o su foto fa comparire il Nome e Cognome dell'utente
+* Nel percorso public/uploads/users/ esiste, a scopo di verifica e collaudo, la mia foto (AmorePietro.jpg). Immagino che successivamente sarà <id_user>.jpg
+* Uniformare la versione allo standard vX.X.XX e correzioni nel progetto
+
+
 ## TODO
 
-## Creazione Users Collections
-
-* Implementazione Users Collections con la definizione dei ruoli utenti
+**feature/usersCrud**: tutte le operazioni CRUD per gli utenti già creati
 
 ---
 
