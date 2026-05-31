@@ -1,7 +1,3 @@
-## Revisione Homepage
-
-**feature/homepage**: tutte le operazioni CRUD per gli utenti già creati
-
 ## TODO
 
 **feature/usersCrud**: tutte le operazioni CRUD per gli utenti già creati

@@ -1,3 +1,6 @@
+## [31-05-2026 20:27][v1.1.01] - Revisione Homepage
+**feature/homepage**: tutte le operazioni CRUD per gli utenti già creati
+
 ## [31-05-2026 01:01][v1.01.00] - Revisione Homepage e Creazione Users Collections
 * **feature/homepage**
   * **Interfaccia Dinamica Condizionale**: Sostituzione della pagina statica index.html con il modulo `backend/homepage.js` per gestire lo stato dell'interfaccia in base alla presenza o meno dell'utente loggato.
