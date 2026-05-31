@@ -1,3 +1,5 @@
+const path = require('path');
+
 /**
  * Genera il layout HTML standard a tre colonne (Top e Footer) in modo agnostico.
  * @param {Object} params - Oggetto JSON unico contenente i parametri di rendering.
@@ -13,7 +15,9 @@ function layout(params) {
   const cssFile = params.cssFile || "styles.css";
   
   const currentProject = process.env.PROJECT || "Applicazione";
-  const appVersion = process.env.npm_package_version || "1.0.06";
+  // Legge dinamicamente la versione reale direttamente dal package.json del progetto
+  const packageJson = require(path.join(process.cwd(), 'package.json'));
+  const appVersion = packageJson.version || "1.0.00";
 
   // Gestione dinamica dei Link di navigazione richiesti
   const navLinksHTML = params.user 

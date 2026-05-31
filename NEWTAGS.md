@@ -1,3 +1,7 @@
+## Revisione Homepage
+
+**feature/homepage**: tutte le operazioni CRUD per gli utenti già creati
+
 ## TODO
 
 **feature/usersCrud**: tutte le operazioni CRUD per gli utenti già creati
@@ -5,7 +9,6 @@
 ---
 
 - Realizzazione della pagina **dashboard.js** che mostra le informazioni basilari del sistema (caratteristiche e versioni dei prodotti coinvolti). In questa stessa pagina devono essere presenti pulsanti che consentono di accedere a informazioni tecniche più avanzate ma anche più riservate (log, lista operazioni, ...
-
 - **structure** albero della struttura delle directory del progetto- **LastAccess.js** monstra un elenco degli ultimi accessi- Autenticazione degli utenti
 - Autorizzazioni degli utenti
 - Backup del database
