@@ -1,0 +1,177 @@
+/* ======================================================================
+   RESET E IMPOSTAZIONI GLOBALI
+   ====================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======================================================================
+   NAVBAR FIXED TOP (Striscia Grigia a 3 colonne)
+   ====================================================================== */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #e9ecef; /* Sfondo Grigio Chiaro */
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.nav-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Allineamento richiesto: link a sinistra, avatar a destra */
+.nav-left { 
+    justify-content: flex-start; 
+    gap: 20px;
+}
+.nav-center { justify-content: center; }
+.nav-right { justify-content: flex-end; }
+
+/* Link di Navigazione (Home Dashboard a sinistra) */
+.main-nav a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 20px;
+    transition: color 0.15s ease;
+}
+
+.main-nav a:hover { 
+    color: #0b5ed7; 
+}
+
+/* Gestione Avatar e lettere a destra */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.avatar-container {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6c757d; /* Sfondo cerchio lettere */
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-initial {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #495057;
+    border: 1px solid #adb5bd;
+    background-color: #f8f9fa;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.15s ease;
+}
+
+.btn-login:hover {
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #86b7fe;
+}
+
+/* ======================================================================
+   CORPO CENTRALE LIBERO E FLESSIBILE
+   ====================================================================== */
+.main-wrapper {
+    flex: 1;
+    padding-top: 70px; /* Spazio per non coprire il testo con la barra fissa */
+    padding-bottom: 30px;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ======================================================================
+   FOOTER (Striscia Grigia Bloccata in Basso a 3 colonne)
+   ====================================================================== */
+.footer-global {
+    background-color: #e9ecef; /* Sfondo Grigio Chiaro coordinato */
+    color: #495057;
+    border-top: 1px solid #dee2e6;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 0.85rem;
+}
+
+.footer-column { 
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.footer-left { justify-content: flex-start; }
+/* Versione corrente bloccata al centro della striscia */
+.footer-center { justify-content: center; font-weight: 600; } 
+.footer-right { justify-content: flex-end; }
+
+/* ======================================================================
+   SCHEDE DI ERRORE CENTRALIZZATE
+   ====================================================================== */
+.error-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    max-width: 550px;
+    margin: 40px auto;
+}
+
+.error-title { color: #dc3545; font-size: 2rem; margin-bottom: 10px; }
+.error-message { color: #6c757d; font-size: 1rem; margin-bottom: 20px; }
+code { background-color: #f1f3f5; padding: 2px 5px; border-radius: 4px; font-family: monospace; color: #d63384; }
