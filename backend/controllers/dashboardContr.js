@@ -138,7 +138,7 @@ export async function renderDashboard(context) {
   ];
   const metricsHtml = metricsData.map(card => renderMetricCard(card)).join('');
 
-  // 5. Mappatura e composizione dinamica della Sezione Tools Assistenza
+  // 5. Mappatura e composizione dinamica dei Tools Assistenza
   const toolsList = [
     { href: '/send-test-email', label: 'Invio email' },
     { href: '/health'         , label: 'Health Check' },
@@ -154,9 +154,9 @@ export async function renderDashboard(context) {
   ];
   const toolsHtml = toolsList.map(tool => renderToolButton(tool)).join('');
 
-  // 6. Mappatura e composizione dinamica della Sezione Database Collections
+  // 6. Mappatura e composizione dinamica del Database
   const collectionsList = [
-    { href: '/allUsers', label: 'Users' }
+    { href: '/allUsers', label: 'Collection Users' }
   ];
   const collectionsHtml = collectionsList.map(coll => renderToolButton(coll)).join('');
 
@@ -179,17 +179,17 @@ export async function renderDashboard(context) {
           ${metricsHtml}
         </div>
 
-        <!-- Gruppo 2: Sezione TOOLS Assistenza (A 4 colonne responsive) -->
+        <!-- Gruppo 2: TOOLS Assistenza (A 4 colonne responsive) -->
         <div class="mt-5">
-          <h4 class="fw-bold text-dark border-bottom pb-2 mb-2 fs-5">Sezione TOOLS Assistenza</h4>
+          <h4 class="fw-bold text-dark border-bottom pb-2 mb-2 fs-5">TOOLS Assistenza</h4>
           <div class="row g-2">
             ${toolsHtml}
           </div>
         </div>
 
-        <!-- Gruppo 3: Sezione Database Collections -->
+        <!-- Gruppo 3: Database -->
         <div class="mt-5 mb-5">
-          <h4 class="fw-bold text-dark border-bottom pb-2 mb-2 fs-5">Sezione Database Collections</h4>
+          <h4 class="fw-bold text-dark border-bottom pb-2 mb-2 fs-5">Database</h4>
           <div class="row g-2">
             ${collectionsHtml}
           </div>

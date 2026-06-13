@@ -1,5 +1,3 @@
-// File completo: backend/layout.js
-
 /**
  * Genera la struttura agnostica del Layout Top-Fixed a tre colonne geometriche
  * Agganciato al 100% con le classi native di produzione di Bootstrap v5.3
