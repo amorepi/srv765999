@@ -8,8 +8,6 @@ import { mainRoutes } from './backend/routes/mainRoutes.js';
 
 const app = express();
 
-
-
 // 1. Lettura centralizzata e unica del package.json al boot del processo
 const packageJsonPath = path.join(process.cwd(), 'package.json');
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
