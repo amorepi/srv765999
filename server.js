@@ -24,6 +24,7 @@ async function bootstrap() {
       throw new Error("Variabile d'ambiente MONGO_URI mancante nel file .env");
     }
 
+    
     // 3. Connessione asincrona a MongoDB
     const client = new MongoClient(mongoUri);
     await client.connect();
